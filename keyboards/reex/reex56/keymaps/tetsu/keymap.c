@@ -76,7 +76,7 @@ int16_t after_click_lock_movement = 0;      // クリック入力後の移動量
 int16_t mouse_record_threshold = 30;    // ポインターの動きを一時的に記録するフレーム数。 Number of frames in which the pointer movement is temporarily recorded.
 int16_t mouse_move_count_ratio = 5;     // ポインターの動きを再生する際の移動フレームの係数。 The coefficient of the moving frame when replaying the pointer movement.
 
-const uint16_t ignore_disable_mouse_layer_keys[] = {KC_LCTL};   // この配列で指定されたキーはマウスレイヤー中に押下してもマウスレイヤーを解除しない
+const uint16_t ignore_disable_mouse_layer_keys[] = {KC_LCTL,KC_LGUI,KC_RSFT};   // この配列で指定されたキーはマウスレイヤー中に押下してもマウスレイヤーを解除しない
 
 int16_t mouse_movement;
 
@@ -103,9 +103,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
         KC_TAB  ,KC_TRNS ,KC_J    ,KC_LCTL ,KC_LGUI ,KC_K    ,         KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RIGHT,KC_MINS,KC_EQL ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
-        KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,         KC_LCBR ,KC_RCBR ,KC_RCBR  ,KC_RPRN ,KC_QUES ,RGB_VAD ,
+        KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,         KC_LCBR ,KC_RCBR ,KC_LPRN ,KC_RPRN ,KC_QUES ,RGB_VAD ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
-        KC_TRNS ,KC_TRNS ,KC_TRNS                   ,BALL    ,         KC_TRNS                   ,KC_TRNS ,KC_TRNS ,KC_TRNS
+        KC_TRNS ,KC_TRNS ,KC_TRNS                   ,KC_RSFT ,         KC_TRNS                   ,KC_TRNS ,KC_TRNS ,KC_TRNS
     // `--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------'
     ),
     // BALL
@@ -132,7 +132,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |--------+--------+--------+--------+-----------------|        |----------+----------+----------+----------+----------+-------------|
         KC_RSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,         KC_N      ,KC_M       ,KC_COMM  ,KC_DOT   ,KC_SLSH  ,BALL,
     // |--------+--------+--------+--------+--------+--------|        |----------+----------+----------+----------+----------+-------------|
-        KC_LCTL ,KC_LGUI ,KC_LALT                   ,KC_SPC  ,         FN                               ,KC_QUOT   ,KC_BSLS   ,KC_TILD
+        KC_LCTL ,KC_LGUI ,KC_LALT                   ,KC_RSFT  ,         FN                               ,KC_QUOT   ,KC_BSLS   ,KC_TILD
     // `--------+--------+--------+--------+--------+--------|        |----------+----------+----------+----------+----------+-------------'
     )
 };
@@ -236,6 +236,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 state = SCROLLING;
             } else {
                 enable_click_layer();   // スクロールキーを離した時に再度クリックレイヤーを有効にする。 Enable click layer again when the scroll key is released.
+                state = CLICKING;
             }
         return false;
 
