@@ -103,9 +103,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
         KC_TAB  ,KC_TRNS ,KC_J    ,KC_LCTL ,KC_LGUI ,KC_K    ,         KC_LEFT ,KC_DOWN ,KC_UP   ,KC_RIGHT,KC_MINS,KC_EQL ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
-        KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,KC_TRNS ,         KC_LCBR ,KC_RCBR ,KC_LPRN ,KC_RPRN ,KC_QUES ,RGB_VAD ,
+        KC_LSFT ,KC_1    ,KC_2    ,KC_3    ,KC_4    ,KC_5    ,         KC_LCBR ,KC_RCBR ,KC_LPRN ,KC_RPRN ,KC_QUES ,RGB_VAD ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
-        KC_TRNS ,KC_TRNS ,KC_TRNS                   ,KC_RSFT ,         KC_TRNS                   ,KC_TRNS ,KC_TRNS ,KC_TRNS
+        KC_LCTL ,KC_LGUI ,KC_LALT                   ,KC_RSFT ,         KC_TRNS                   ,KC_TRNS ,KC_TRNS ,KC_TRNS
     // `--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------'
     ),
     // BALL
