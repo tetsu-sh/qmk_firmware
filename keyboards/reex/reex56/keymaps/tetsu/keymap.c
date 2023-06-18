@@ -117,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
         KC_TRNS ,KC_EXLM ,KC_AT   ,KC_HASH ,KC_DLR  ,KC_PERC ,         KC_CIRC ,KC_AMPR ,KC_ASTR ,KC_9    ,KC_0    ,KC_TC_INC ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
-        SCRL_DVI,SCRL_DVD,KC_TC_DEC,KC_TC_INC,KC_SD_V,KC_SD_H ,         KC_SD_H ,KC_LBRC, KC_RBRC ,KC_LT   ,KC_GT   ,KC_TC_DEC ,
+        SCRL_DVI,SCRL_DVD,KC_TC_DEC,KC_TC_INC,KC_SD_V,KC_SD_H ,        KC_LBRC ,KC_RBRC ,KC_LT   ,KC_GT   ,KC_QUES ,KC_TC_DEC ,
     // |--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------|
         KC_TRNS ,KC_TRNS ,KC_TRNS                   ,KC_TRNS ,         KC_TRNS                   ,KC_TRNS ,KC_TRNS ,KC_TRNS
     // `--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+-------------'
