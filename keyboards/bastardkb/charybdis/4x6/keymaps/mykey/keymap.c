@@ -55,6 +55,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define RAISE MO(LAYER_RAISE)
 #define ADJUST MO(LAYER_ADJUST)
 #define POINTER MO(LAYER_POINTER)
+#define TG_POINTER TG(LAYER_POINTER)
 #define PT_Z LT(LAYER_POINTER, KC_Z)
 #define PT_SLSH LT(LAYER_POINTER, KC_SLSH)
 
@@ -75,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TAB,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,       KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_ENT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LGUI,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, POINTER,
+       KC_LGUI,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, TG_POINTER,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                    KC_SPC, LOWER,   KC_LSFT,     KC_RCTL,  RAISE,
                                            POINTER, KC_LALT,     KC_RGUI
@@ -120,7 +121,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_BTN4,  KC_BTN1, DRGSCRL,KC_BTN2, KC_RPRN, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, _______, DRGSCRL, SNIPING,  EE_CLR, QK_BOOT,    KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, XXXXXXX,
+       XXXXXXX, _______, DRGSCRL, SNIPING,  EE_CLR, QK_BOOT,    KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, TG_POINTER,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_BTN2, KC_BTN1, KC_BTN3,    KC_BTN1, KC_BTN3,
                                            KC_LSFT, KC_BTN2,    KC_BTN2
