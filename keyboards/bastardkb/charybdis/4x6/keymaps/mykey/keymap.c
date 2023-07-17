@@ -118,9 +118,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TILD, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_F6,   KC_F7,   KC_F8,   KC_F11, KC_F12, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_BTN4,  KC_BTN1, KC_BTN2,DRGSCRL, KC_RPRN, KC_UNDS,
+       KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_BTN4,  KC_BTN1, DRGSCRL,KC_BTN2, KC_RPRN, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, _______, DRGSCRL, SNIPING,  EE_CLR, QK_BOOT,    KC_BTN4,  KC_BTN4, KC_BTN1, KC_BTN2,DRGSCRL, XXXXXXX,
+       XXXXXXX, _______, DRGSCRL, SNIPING,  EE_CLR, QK_BOOT,    KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, XXXXXXX,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_BTN2, KC_BTN1, KC_BTN3,    KC_BTN1, KC_BTN3,
                                            KC_LSFT, KC_BTN2,    KC_BTN2
