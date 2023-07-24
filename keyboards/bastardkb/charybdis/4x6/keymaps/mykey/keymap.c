@@ -123,8 +123,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        XXXXXXX, KC_Z,    KC_X,  KC_C,     KC_V,      KC_B,      KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, TG_POINTER,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  KC_BTN2, KC_BTN1, KC_BTN3,    KC_BTN1, KC_BTN3,
-                                           KC_LSFT, KC_BTN2,    KC_BTN2
+                                  KC_BTN2, KC_BTN1, KC_BTN3,    KC_RGUI, KC_BTN3,
+                                           KC_LSFT, KC_BTN2,    KC_RCTL
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
   [LAYER_ADJUST] = LAYOUT(
