@@ -115,15 +115,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [LAYER_POINTER] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    DPI_MOD, S_D_MOD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+       KC_ESC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    DPI_MOD, S_D_MOD, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSPC,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TILD, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_F6,   KC_F7,   KC_F8,   KC_F11, KC_F12, KC_UNDS,
+       KC_ESC, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,      KC_F6,   KC_F7,   KC_F8,   KC_F11, KC_F12, KC_BSPC,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TILD, KC_EXLM, KC_AT, KC_HASH,  KC_DLR, KC_PERC,      KC_BTN4,  KC_BTN1, DRGSCRL,KC_BTN2, KC_RPRN, KC_UNDS,
+       KC_TAB, KC_EXLM, KC_AT, KC_HASH,  KC_DLR, KC_PERC,      KC_BTN4,  KC_BTN1, DRGSCRL,KC_BTN2, KC_RPRN, KC_ENT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX, KC_Z,    KC_X,  KC_C,     KC_V,      KC_B,      KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, TG_POINTER,
+       KC_LGUI, KC_Z,    KC_X,  KC_C,     KC_V,      KC_B,      KC_BTN4,  KC_BTN4, KC_BTN1, DRGSCRL,KC_BTN2, TG_POINTER,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  KC_BTN2, KC_BTN1, KC_BTN3,    KC_RGUI, KC_BTN3,
+                                  KC_BTN2, KC_LSFT, KC_BTN3,    KC_RGUI, KC_RSFT,
                                            KC_LSFT, KC_BTN2,    KC_RCTL
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
