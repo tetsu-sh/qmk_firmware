@@ -114,10 +114,10 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     if(index == 0){
      if(clockwise){
          key.row = 4;
-         key.col = 0;
+         key.col = 1;
        } else {
          key.row = 4;
-         key.col = 1;
+         key.col = 0;
        }
       
        uint8_t layer = layer_switch_get_layer(key);
@@ -127,10 +127,10 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     }else if(index == 1){
       if(clockwise){
          key.row = 9;
-         key.col = 0;
+         key.col = 1;
        } else {
          key.row = 9;
-         key.col = 1;
+         key.col = 0;
        }
       
        uint8_t layer = layer_switch_get_layer(key);
