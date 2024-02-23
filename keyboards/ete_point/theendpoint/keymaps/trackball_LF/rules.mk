@@ -1,5 +1,5 @@
 ENCODER_ENABLE = yes
-MOUSEKEY_ENABLE = yes
+MOUSEKEY_ENABLE = no
 
 # Optical sensor driver for trackball.
 POINTING_DEVICE_ENABLE = yes
